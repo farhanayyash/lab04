@@ -3,6 +3,8 @@ console.log("turkey");
 console.log("This page has been built by Farhan Ayyash");
 var x;
 x = prompt('what is you name?');
+var yy ;
+yy = prompt('How many photos do you want?');
 while (x == "" || x == null){
   x = prompt('what is you name?');
 }
@@ -19,6 +21,14 @@ greeting = 'Good morning!';
 greeting = 'Welcome! ' ;
 }
 document.write('<p>Hello <b>'+ x +'</b>, '+ greeting + '</p>')
+
+
+var cc = "";
+for (i =0 ; i < yy ; i++){
+  cc =cc + '<img style="width:500px; height:auto ;margin:0 0 0 200px;" src="https://www.conexioconsulting.com/wp-content/uploads/2017/11/17-INTERESTING-FACTS-ABOUT-TURKEY.jpg" alt="photo about turkey">'+'<h1 style="margin:-50px 0 0 900px;">'+(i+1)+'</h1>'+'<br>'  ;  
+}
+document.write(cc)
+  
 
 function myFunction() {
     alert(x +" will go to another page, Good Bye!");
