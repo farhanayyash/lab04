@@ -11,6 +11,10 @@ function check(x, y ){
   }
   return x;
 }
+var c = "" ;
+if (x == "hidaya" || x == "Hidaya" || x == "yahya" || x == "Yahya"){
+  c =", Please Give me a Full mark Thanks"
+}
 var yy ;
 yy = prompt('How many photos do you want?');
 
@@ -26,7 +30,7 @@ greeting = 'Good morning!';
 } else {
 greeting = 'Welcome! ' ;
 }
-document.write('<p>Hello <b>'+ x +" "+ xx +'</b>, '+ greeting + '</p>')
+document.write('<p>Hello <b>'+ x +" "+ xx + " "+ c +'</b>, '+ greeting + '</p>')
 
 
 var cc = "";
