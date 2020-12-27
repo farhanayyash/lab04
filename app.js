@@ -1,13 +1,19 @@
 // this is my fist js file
 console.log("turkey");
 console.log("This page has been built by Farhan Ayyash");
-var x;
-x = prompt('what is you name?');
+var x = 0 ;
+x = check(x,'What is your First Name ?');
+var xx = 0 ;
+xx = check(xx,'What is your Last Name ?');
+function check(x, y ){
+  while (x == "" || x == null || x == undefined || x == 0){
+      x = prompt(y);
+  }
+  return x;
+}
 var yy ;
 yy = prompt('How many photos do you want?');
-while (x == "" || x == null){
-  x = prompt('what is you name?');
-}
+
 var today= new Date();
 var hourNow = today.getHours();
 var greeting;
@@ -20,7 +26,7 @@ greeting = 'Good morning!';
 } else {
 greeting = 'Welcome! ' ;
 }
-document.write('<p>Hello <b>'+ x +'</b>, '+ greeting + '</p>')
+document.write('<p>Hello <b>'+ x +" "+ xx +'</b>, '+ greeting + '</p>')
 
 
 var cc = "";
